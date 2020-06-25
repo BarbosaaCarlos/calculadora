@@ -72,15 +72,14 @@ B9 = Button(janela, text="8",  padx=20,command=lambda: buttonFuction(8))
 B10 = Button(janela, text="9",  padx=20,command=lambda: buttonFuction(9))
 
 
-B11 = Button(janela, text="+",  padx=20,command=button_add)
-B12 = Button(janela, text="=",  padx=20,command=button_equal)
-B13 = Button(janela, text=" ",  padx=21,command=button_clear)
+B11 = Button(janela, text="+",  padx=19,command=button_add)
+B12 = Button(janela, text="=",  padx=19,command=button_equal)
+B13 = Button(janela, text="clear ",  padx=9,command=button_clear)
 B14 = Button(janela, text="-",  padx=21,command=button_sub)
 B15 = Button(janela, text="*",  padx=21,command=button_multiply)
-B16 = Button(janela, text="/",  padx=21,command=button_divide)
+B16 = Button(janela, text="/",  padx=20,command=button_divide)
 
 
-B1.grid(row=4, column=0)
 
 B2.grid(row=1, column=0)
 B3.grid(row=1, column=1)
@@ -94,10 +93,11 @@ B8.grid(row=3, column=0)
 B9.grid(row=3, column=1)
 B10.grid(row=3, column=2)
 
-B11.grid(row=3, column=2)#+
-B12.grid(row=4, column=1)#=
-B13.grid(row=5, column=0)#clear
-B14.grid(row=4, column=2)#-
+B11.grid(row=4, column=0)#+
+B1.grid(row=4, column=1)
+B12.grid(row=4, column=2)#=
+B13.grid(row=6, column=1)#clear
+B14.grid(row=5, column=0)#-
 B15.grid(row=5, column=2)#*
 B16.grid(row=5, column=1)#/
 
